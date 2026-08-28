@@ -27,7 +27,12 @@ body {
   font-size: 16.5px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
+body.page-loaded { opacity: 1; transform: translateY(0); }
+body.page-leaving { opacity: 0; transform: translateY(-8px); }
 ::selection { background: var(--tint); color: var(--red); }
 a { color: inherit; }
 p { margin: 0; }
@@ -66,6 +71,66 @@ h1, h2, h3 {
 .nav-links a.link:hover { color: var(--red); }
 @media (max-width: 640px) { .nav-links a.link { display: none; } }
 
+/* ---------- NAV DROPDOWNS (Our Work / About Us) ---------- */
+.nav-item-dropdown { position: relative; }
+.nav-item-dropdown::after {
+  /* invisible bridge so the pointer can travel from the trigger down into the panel
+     without the gap between them closing the menu */
+  content: '';
+  position: absolute;
+  top: 100%; left: -12px; right: -12px; height: 16px;
+}
+.dropdown-panel {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: -14px;
+  min-width: 250px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0;
+  transform: translateX(-18px);
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  z-index: 60;
+}
+.nav-item-dropdown:hover .dropdown-panel,
+.nav-item-dropdown.open .dropdown-panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.dropdown-item:hover { background: var(--bg-alt); }
+.dropdown-item-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown-item-desc { font-size: 12.5px; color: var(--ink-faint); }
+.dropdown-item-tag {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--red); background: var(--tint);
+  padding: 2px 7px; border-radius: 20px;
+}
+
 /* The nav's Contact-us button is a fixed, static control — no hover/active
    color change. It intentionally does not use .link's hover rule above. */
 .nav-cta {
@@ -102,7 +167,9 @@ h1, h2, h3 {
 .btn:focus-visible, a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 
 /* ---------- HERO (home only) ---------- */
-.hero { padding: 108px 0 88px; text-align: center; }
+.hero { position: relative; overflow: hidden; padding: 108px 0 88px; text-align: center; }
+#particles-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+.hero .wrap { position: relative; z-index: 1; }
 .eyebrow {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
