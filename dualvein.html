@@ -1,104 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DUALVein — VascuTech Medical</title>
-<meta name="description" content="DUALVein: a portable near-infrared vein-imaging device, currently in development.">
-<link rel="stylesheet" href="css/style.css">
-<noscript><style>body{opacity:1 !important; transform:none !important;}</style></noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VascuTech Medical | DualVein</title>
+<meta name="description" content="DualVein is a near-infrared vein visualisation device for teaching labs and manikin practice.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div style="width:100%;background:#ffffff;font-family:'Source Sans 3',system-ui,sans-serif;color:#1B1D22">
 
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a href="index.html" aria-label="VascuTech home">
-      <img class="brand-lockup" src="assets/logo-lockup.png" alt="VascuTech Medical Limited">
-    </a>
-    <div class="nav-links">
-      <div class="nav-item-dropdown">
-        <a href="work.html" class="link dropdown-trigger active">Our Work</a>
-        <div class="dropdown-panel">
-          <a href="vascuai.html" class="dropdown-item">
-            <span class="dropdown-item-title">VascuAI</span>
-            <span class="dropdown-item-desc">AI training app</span>
-          </a>
-          <a href="dualvein.html" class="dropdown-item">
-            <span class="dropdown-item-title">DUALVein</span>
-            <span class="dropdown-item-desc">Vein-imaging hardware</span>
-          </a>
-          <a href="synthvein.html" class="dropdown-item">
-            <span class="dropdown-item-title">SynthVein <span class="dropdown-item-tag">Upcoming</span></span>
-            <span class="dropdown-item-desc">Synthetic vein-data initiative</span>
-          </a>
-        </div>
-      </div>
-      <div class="nav-item-dropdown">
-        <a href="about.html" class="link dropdown-trigger">About Us</a>
-        <div class="dropdown-panel">
-          <a href="who-we-are.html" class="dropdown-item">
-            <span class="dropdown-item-title">Who Are We</span>
-            <span class="dropdown-item-desc">Our mission &amp; values</span>
-          </a>
-          <a href="achievements.html" class="dropdown-item">
-            <span class="dropdown-item-title">Achievements</span>
-            <span class="dropdown-item-desc">Where we are today</span>
-          </a>
-          <a href="publications-patents.html" class="dropdown-item">
-            <span class="dropdown-item-title">Publications &amp; Patents</span>
-            <span class="dropdown-item-desc">Research &amp; IP</span>
-          </a>
-        </div>
-      </div>
-      <a href="contact.html" class="nav-cta">Contact us</a>
-    </div>
-  </div>
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;border-bottom:1px solid #E7E8ED;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)">
+<div style="max-width:1200px;margin:0 auto;padding:14px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<a href="index.html"><img src="assets/logo.png" alt="VascuTech Medical Limited" style="height:96px;width:auto;display:block;margin:-18px 0"></a>
+<nav class="nav" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;font-size:16px;font-weight:600">
+<a href="index.html" style="color:#1B1D22">Home</a>
+<a href="vascuai.html" style="color:#1B1D22">VascuAI</a>
+<a href="dualvein.html" style="color:#9C2B45">DualVein</a>
+<a href="about.html" style="color:#1B1D22">About</a>
+<a class="btn" href="about.html" style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;padding:12px 24px;border-radius:999px">Collaborate</a>
 </nav>
-
-<div class="page-header wrap">
-  <span class="eyebrow">Our Work &middot; The Hardware</span>
-  <h1>DUALVein</h1>
-  <p>A portable near-infrared vein-imaging device, paired with the same software behind VascuAI.</p>
-  <span class="concept-tag">Concept in development</span>
 </div>
+</header>
 
-<section class="subsection">
-  <div class="wrap">
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
-        <h3>NIR Vein Visualizer</h3>
-        <p>Highlights subsurface vein position in real time using near-infrared imaging.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
-        <h3>Direct-Skin Projection</h3>
-        <p>Projects the vein pattern directly onto the patient's skin &mdash; no separate screen to look away to.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v13H7l-3 3V4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-        <h3>Companion Software</h3>
-        <p>Pairs with the same segmentation technology used across VascuTech's products.</p>
-      </div>
-    </div>
-    <div class="report-cta">
-      <a href="contact.html" class="btn btn-outline">Ask about DUALVein</a>
-    </div>
-  </div>
+<!-- HERO -->
+<section style="background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:72px 32px 80px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:1 1 480px;min-width:0">
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+<span style="font-size:12px;font-weight:700;background:#F4EEF1;color:#77396C;padding:7px 14px;border-radius:999px">Prototype in development</span>
+<span style="font-size:12px;font-weight:700;background:#F4EEF1;color:#3E4E78;padding:7px 14px;border-radius:999px">James Dyson Award 2026 · Hong Kong national winner</span>
+</div>
+<h1 style="margin:20px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:58px;line-height:1.06;letter-spacing:-1.6px">DualVein</h1>
+<p style="margin:14px 0 0;font-family:'Sora',sans-serif;font-weight:500;font-size:26px;line-height:1.3;color:#575C67">Portable AI guidance for vein injection learning.</p>
+<p style="margin:20px 0 0;font-size:19px;line-height:1.6;color:#575C67;max-width:560px">A near-infrared device that shows trainees where veins run and projects the vein map onto the skin, designed for teaching labs and practice on manikins and phantoms.</p>
+<div style="margin-top:32px;display:flex;flex-wrap:wrap;gap:14px">
+<a class="btn" href="about.html#contact" style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px">Collaborate on DualVein</a>
+<a class="btn" href="#evidence" style="background:#ffffff;color:#1B1D22;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px;border:1.5px solid #D5D7DE">See the evidence</a>
+</div>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<div style="position:relative;border-radius:40px;overflow:hidden;box-shadow:0 1px 2px rgba(20,20,30,.05),0 22px 50px rgba(60,30,80,.22);background:#1B1D22">
+<img src="assets/dualvein-device.jpg" alt="Working DualVein prototype with a hand resting on its base" style="width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;object-position:52% 50%">
+</div>
+</div>
+</div>
 </section>
 
-<footer>
-  <div class="wrap footer-inner">
-    <img class="footer-mark" src="assets/logo-mark.png" alt="VascuTech mark">
-    <div class="footer-links">
-      <a href="work.html">Our Work</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact us</a>
-    </div>
-    <p class="footer-copy">&copy; 2026 VascuTech Medical Limited &middot; Hong Kong</p>
-  </div>
+<!-- WHAT IT IS -->
+<section style="max-width:1200px;margin:0 auto;padding:88px 32px 40px;box-sizing:border-box">
+<div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+<div style="flex:1 1 360px;min-width:0">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">What it is</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px">See the vein before the needle.</h2>
+</div>
+<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:16px;font-size:18px;line-height:1.65;color:#575C67">
+<p style="margin:0">DualVein lights the arm in near-infrared, outlines the veins with AI and projects the pattern onto the skin, so learners can connect what they see on the surface with the anatomy beneath.</p>
+</div>
+</div>
+</section>
+
+<!-- HOW -->
+<section style="max-width:1200px;margin:0 auto;padding:40px 32px 88px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">How it works</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px">Illuminate, capture, segment, project.</h2>
+<div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:24px">
+<div style="flex:1 1 240px;min-width:0;border-top:3px solid #9C2B45;padding-top:20px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:38px;color:#9C2B45">1</div>
+<div style="margin-top:6px;font-weight:700;font-size:20px">Illuminate</div>
+<div style="margin-top:8px;font-size:16px;line-height:1.55;color:#575C67">Near-infrared light shone on the arm.</div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border-top:3px solid #77396C;padding-top:20px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:38px;color:#77396C">2</div>
+<div style="margin-top:6px;font-weight:700;font-size:20px">Capture</div>
+<div style="margin-top:8px;font-size:16px;line-height:1.55;color:#575C67">A camera records the near-infrared image.</div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border-top:3px solid #3E4E78;padding-top:20px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:38px;color:#3E4E78">3</div>
+<div style="margin-top:6px;font-weight:700;font-size:20px">Segment</div>
+<div style="margin-top:8px;font-size:16px;line-height:1.55;color:#575C67">AI outlines the vein pattern.</div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border-top:3px solid #9C2B45;padding-top:20px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:38px;color:#9C2B45">4</div>
+<div style="margin-top:6px;font-weight:700;font-size:20px">Project</div>
+<div style="margin-top:8px;font-size:16px;line-height:1.55;color:#575C67">The map is shown on the skin for the learner.</div>
+</div>
+</div>
+</section>
+
+<!-- IN USE -->
+<section style="max-width:1200px;margin:0 auto;padding:0 32px 88px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">In use</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px">Practising with the vein map in view.</h2>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:20px;align-items:stretch">
+<div style="flex:1.6 1 520px;min-width:0;position:relative;border-radius:32px;overflow:hidden;background:#1B1D22;box-shadow:0 1px 2px rgba(20,20,30,.05),0 18px 44px rgba(20,20,30,.12)">
+<img src="assets/dualvein-practice.jpg" alt="A trainee practising needle insertion on a manikin hand while the DualVein prototype projects the vein map; the desktop interface is open on the laptop" style="width:100%;height:100%;display:block;object-fit:cover;min-height:340px">
+<div style="position:absolute;left:20px;bottom:20px"><span style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px">Needle practice with the projected vein map</span></div>
+</div>
+<div style="flex:1 1 300px;min-width:0;position:relative;border-radius:32px;overflow:hidden;background:#1B1D22;box-shadow:0 1px 2px rgba(20,20,30,.05),0 18px 44px rgba(20,20,30,.12)">
+<img src="assets/dualvein-projection.jpg" alt="Prototype projecting a green vein map onto the back of a hand" style="width:100%;height:100%;display:block;object-fit:cover;min-height:340px;object-position:50% 45%">
+<div style="position:absolute;left:20px;bottom:20px"><span style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px">Vein map on skin</span></div>
+</div>
+</div>
+</section>
+
+<!-- INSIDE -->
+<section style="background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:88px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:1 1 360px;min-width:0">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Inside the device</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px">What is inside the prototype.</h2>
+<p style="margin:18px 0 0;font-size:18px;line-height:1.6;color:#575C67">The current prototype combines a camera and projector head, a single-board computer, an LED illumination panel, dimmer controls, a rechargeable battery and a height-adjustable column.</p>
+<div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:10px">
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">Camera and projector head</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">Single-board computer</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">LED illumination panel</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">Dimmer controls</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">Rechargeable battery</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px">Height-adjustable column</span>
+</div>
+</div>
+<div style="flex:1.2 1 460px;min-width:0">
+<div style="border-radius:32px;overflow:hidden;background:#EEF0F4;box-shadow:0 1px 2px rgba(20,20,30,.05),0 18px 44px rgba(20,20,30,.1)">
+<img src="assets/dualvein-exploded.jpg" alt="Exploded render of the DualVein device showing its housing, camera and projector head, computer board, LED panel, controls, battery and lead-screw column" style="width:100%;height:auto;display:block">
+</div>
+</div>
+</div>
+</section>
+
+<!-- EVIDENCE -->
+<section id="evidence" style="background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:88px 32px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Evidence</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px;max-width:820px">What published studies say about near-infrared vein visualisation.</h2>
+<p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#575C67;max-width:760px">The evidence is encouraging for teaching and for older patients, and mixed in other clinical groups. That is why we build DualVein as a learning aid.</p>
+
+<div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:10px">
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px;color:#1B1D22"><span style="color:#9C2B45">Encouraging:</span> nursing education</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px;color:#1B1D22"><span style="color:#9C2B45">Encouraging:</span> patients aged 65 and over</span>
+<span style="font-size:14px;font-weight:600;background:#ffffff;border:1px solid #E7E8ED;padding:8px 14px;border-radius:999px;color:#1B1D22"><span style="color:#3E4E78">Mixed:</span> children with dark skin, sickle cell disease</span>
+</div>
+<details style="margin-top:28px">
+<summary style="display:inline-flex;align-items:center;gap:10px;background:#ffffff;border:1.5px solid #D5D7DE;border-radius:999px;padding:12px 22px;font-size:15px;font-weight:700;color:#1B1D22">Read the studies and references<svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#9C2B45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5l5 5 5-5"/></svg></summary>
+<div style="margin-top:8px">
+<div style="margin-top:36px;background:#ffffff;border-radius:32px;padding:36px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start;box-shadow:0 1px 2px rgba(20,20,30,.05),0 14px 34px rgba(20,20,30,.06)">
+<div style="flex:1 1 300px;min-width:0">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#77396C">In nursing education</div>
+<div style="margin-top:10px;font-family:'Sora',sans-serif;font-weight:600;font-size:26px;line-height:1.25">Faster site selection for nursing students.</div>
+</div>
+<div style="flex:1 1 440px;min-width:0;font-size:17px;line-height:1.65;color:#575C67">
+<p style="margin:0">Fukuroku and colleagues<sup>[1]</sup> asked second-year nursing students to select forearm venipuncture sites on volunteers with a tourniquet only, with a near-infrared vein display only, and with both (52 trials). Site selection was significantly faster with the display, particularly at difficult sites. The quality of venipuncture did not differ significantly. The authors concluded that such equipment can help develop practical skills, especially for elderly patients.</p>
+</div>
+</div>
+
+<div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 340px;min-width:0;background:#ffffff;border:1px solid #E7E8ED;border-radius:28px;padding:28px;box-sizing:border-box">
+<div style="font-weight:700;font-size:19px">Older patients, pooled analysis<sup style="font-weight:600">[2]</sup></div>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.6;color:#575C67">Meta-analysis of eight studies in adults aged 65 and over: higher first-attempt success (odds ratio 2.36, 95% CI 1.73 to 3.21) and shorter procedures. The authors rate the certainty of evidence as limited by heterogeneity and risk of bias.</p>
+</div>
+<div style="flex:1 1 340px;min-width:0;background:#ffffff;border:1px solid #E7E8ED;border-radius:28px;padding:28px;box-sizing:border-box">
+<div style="font-weight:700;font-size:19px">Finding more cannulation sites<sup style="font-weight:600">[3]</sup></div>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.6;color:#575C67">In 384 adults, an infrared vein finder increased the number of potential cannulation sites identified, compared with unaided eyesight, in all patient subgroups studied.</p>
+</div>
+<div style="flex:1 1 340px;min-width:0;background:#ffffff;border:1px solid #E7E8ED;border-radius:28px;padding:28px;box-sizing:border-box">
+<div style="font-weight:700;font-size:19px">Hospital quality improvement<sup style="font-weight:600">[4]</sup></div>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.6;color:#575C67">After a near-infrared device was introduced on hospital wards, success rate, number of attempts and procedure time improved. The authors call for further evaluation.</p>
+</div>
+</div>
+
+<div style="margin-top:20px;background:#ffffff;border:1px solid #E7E8ED;border-radius:28px;padding:28px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+<div style="flex:1 1 260px;min-width:0">
+<div style="font-weight:700;font-size:19px">Where it has not clearly helped</div>
+<p style="margin:10px 0 0;font-size:16px;line-height:1.6;color:#575C67">We include these because researchers should see the full picture.</p>
+</div>
+<div style="flex:2 1 460px;min-width:0;font-size:16px;line-height:1.6;color:#575C67;display:flex;flex-direction:column;gap:10px">
+<div><strong style="color:#1B1D22">Children with dark skin<sup>[5]</sup>:</strong> first-attempt success of 63% with a near-infrared device against 51% without, not statistically significant.</div>
+<div><strong style="color:#1B1D22">Adults with sickle cell disease<sup>[6]</sup>:</strong> no reduction in venepuncture attempts, though patients reported less procedural pain.</div>
+</div>
+</div>
+
+<p style="margin:24px 0 0;font-size:14px;line-height:1.55;color:#575C67;max-width:860px">We read this as support for vein visualisation as a learning aid, not as proof of clinical benefit. DualVein is a teaching device for manikin and phantom practice. It is not intended for use on patients.</p>
+
+<details style="margin-top:32px">
+<summary style="display:inline-flex;align-items:center;gap:10px;background:#ffffff;border:1.5px solid #D5D7DE;border-radius:999px;padding:12px 22px;font-size:15px;font-weight:700;color:#1B1D22">References (6 sources)<svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#9C2B45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5l5 5 5-5"/></svg></summary>
+<div style="margin-top:18px;border-top:1px solid #E7E8ED;padding-top:18px">
+<ol style="margin:0;padding:0 0 0 22px;font-size:14px;line-height:1.65;color:#575C67;display:flex;flex-direction:column;gap:6px">
+<li>Fukuroku K, Narita Y, Taneda Y, Kobayashi S, Gayle AA. Does infrared visualization improve selection of venipuncture sites for indwelling needle at the forearm in second-year nursing students? <em>Nurse Educ Pract.</em> 2016;18:1-9. <a href="https://doi.org/10.1016/j.nepr.2016.02.005">doi:10.1016/j.nepr.2016.02.005</a></li>
+<li>Xu L-M, Zhao D-X, Dong H-R, Lian M-Q. Impact of near-infrared vein imaging on peripheral intravenous access success rates in geriatric patients: a systematic review and meta-analysis. <em>BMC Geriatr.</em> 2026;26:177. <a href="https://doi.org/10.1186/s12877-025-06940-3">doi:10.1186/s12877-025-06940-3</a></li>
+<li>Chiao FB, Resta-Flarer F, Lesser J, et al. Vein visualization: patient characteristic factors and efficacy of a new infrared vein finder technology. <em>Br J Anaesth.</em> 2013;110(6):966-971. <a href="https://doi.org/10.1093/bja/aet003">doi:10.1093/bja/aet003</a></li>
+<li>Bennakhi H, Alajmi M, Baqer M, et al. Improving venous access by using a near-infrared vein-finder device and ultrasound skill building: a quality improvement project. <em>BMJ Open Qual.</em> 2025;14:e003232. <a href="https://doi.org/10.1136/bmjoq-2024-003232">doi:10.1136/bmjoq-2024-003232</a></li>
+<li>van der Woude OCP, Cuper NJ, Getrouw C, Kalkman CJ, de Graaff JC. The effectiveness of a near-infrared vascular imaging device to support intravenous cannulation in children with dark skin color: a cluster randomized clinical trial. <em>Anesth Analg.</em> 2013;116(6):1266-1271. <a href="https://doi.org/10.1213/ANE.0b013e31828e5bde">doi:10.1213/ANE.0b013e31828e5bde</a></li>
+<li>Corbasson A, Fischer E, Vilfaillot A, et al. Efficacy of a vein visualisation device for facilitating peripheral venous line placement in adult patients with sickle cell disease: a randomised clinical trial. <em>Int J Nurs Stud.</em> 2025;163:104988. <a href="https://doi.org/10.1016/j.ijnurstu.2024.104988">doi:10.1016/j.ijnurstu.2024.104988</a></li>
+</ol>
+</div>
+</details>
+</div>
+</details>
+</div>
+</section>
+
+<!-- RECOGNITION -->
+<section style="max-width:1200px;margin:0 auto;padding:88px 32px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Recognition</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.8px">Where DualVein has been noticed.</h2>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1.3 1 340px;min-width:0;background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;border-radius:28px;padding:32px;box-sizing:border-box">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:24px">James Dyson Award 2026</div>
+<div style="margin-top:10px;font-size:17px;line-height:1.55;color:#fbeff4">National winner, Hong Kong.</div>
+</div>
+<div style="flex:1 1 260px;min-width:0;background:#F7F7FA;border:1px solid #E7E8ED;border-radius:28px;padding:32px;box-sizing:border-box">
+<div style="font-weight:700;font-size:19px">HKChallenge+ 2026</div>
+<div style="margin-top:8px;font-size:16px;color:#575C67">DualVein presented in the competition</div>
+</div>
+<div style="flex:1 1 260px;min-width:0;background:#F7F7FA;border:1px solid #E7E8ED;border-radius:28px;padding:32px;box-sizing:border-box">
+<div style="font-weight:700;font-size:19px">HSITP SPIN</div>
+<div style="margin-top:8px;font-size:16px;color:#575C67">Life and Health Technology programme</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="max-width:1200px;margin:0 auto;padding:0 32px 96px;box-sizing:border-box">
+<div style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);border-radius:40px;padding:56px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:32px;align-items:center;color:#ffffff">
+<div style="flex:1 1 420px;min-width:0">
+<h2 style="margin:0;font-family:'Sora',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-.7px">Work on optical imaging, vein segmentation or simulation training?</h2>
+<p style="margin:16px 0 0;font-size:18px;line-height:1.55;color:#fbeff4">We are looking for researchers and educators to test DualVein and give honest feedback.</p>
+</div>
+<a class="btn" href="about.html#contact" style="background:#ffffff;color:#5a2a50;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px">Get in touch</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid #E7E8ED;background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:40px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start">
+<div>
+<img src="assets/logo.png" alt="VascuTech Medical Limited" style="height:72px;width:auto;display:block;margin:-12px 0">
+<div style="margin-top:10px;font-size:14px;color:#575C67">VascuTech Medical Limited · Hong Kong</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:600">
+<a href="vascuai.html" style="color:#1B1D22">VascuAI</a>
+<a href="dualvein.html" style="color:#1B1D22">DualVein</a>
+<a href="about.html" style="color:#1B1D22">About</a>
+<a href="about.html#contact" style="color:#1B1D22">Contact</a>
+</div>
+<div style="width:100%;font-size:13px;line-height:1.5;color:#575C67">© 2026 VascuTech Medical Limited. VascuAI is an education and practice tool, and DualVein is a teaching device. Neither is a medical device for clinical use.</div>
+</div>
 </footer>
 
-<script src="js/main.js"></script>
+</div>
 </body>
 </html>

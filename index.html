@@ -1,111 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VascuTech Medical</title>
-<meta name="description" content="VascuTech Medical Limited — technology for safer vascular access.">
-<link rel="stylesheet" href="css/style.css">
-<noscript><style>body{opacity:1 !important; transform:none !important;}</style></noscript>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VascuTech Medical | Safer vascular access starts with better training</title>
+<meta name="description" content="VascuTech Medical builds AI-guided practice tools and vein-imaging technology that help nursing and medical students learn IV cannulation.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div style="width:100%;background:#ffffff;font-family:'Source Sans 3',system-ui,sans-serif;color:#1B1D22">
 
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a href="index.html" aria-label="VascuTech home">
-      <img class="brand-lockup" src="assets/logo-lockup.png" alt="VascuTech Medical Limited">
-    </a>
-    <div class="nav-links">
-      <div class="nav-item-dropdown">
-        <a href="work.html" class="link dropdown-trigger">Our Work</a>
-        <div class="dropdown-panel">
-          <a href="vascuai.html" class="dropdown-item">
-            <span class="dropdown-item-title">VascuAI</span>
-            <span class="dropdown-item-desc">AI training app</span>
-          </a>
-          <a href="dualvein.html" class="dropdown-item">
-            <span class="dropdown-item-title">DUALVein</span>
-            <span class="dropdown-item-desc">Vein-imaging hardware</span>
-          </a>
-          <a href="synthvein.html" class="dropdown-item">
-            <span class="dropdown-item-title">SynthVein <span class="dropdown-item-tag">Upcoming</span></span>
-            <span class="dropdown-item-desc">Synthetic vein-data initiative</span>
-          </a>
-        </div>
-      </div>
-      <div class="nav-item-dropdown">
-        <a href="about.html" class="link dropdown-trigger">About Us</a>
-        <div class="dropdown-panel">
-          <a href="who-we-are.html" class="dropdown-item">
-            <span class="dropdown-item-title">Who Are We</span>
-            <span class="dropdown-item-desc">Our mission &amp; values</span>
-          </a>
-          <a href="achievements.html" class="dropdown-item">
-            <span class="dropdown-item-title">Achievements</span>
-            <span class="dropdown-item-desc">Where we are today</span>
-          </a>
-          <a href="publications-patents.html" class="dropdown-item">
-            <span class="dropdown-item-title">Publications &amp; Patents</span>
-            <span class="dropdown-item-desc">Research &amp; IP</span>
-          </a>
-        </div>
-      </div>
-      <a href="contact.html" class="nav-cta">Contact us</a>
-    </div>
-  </div>
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;border-bottom:1px solid #E7E8ED;background:rgba(255,255,255,.94);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)">
+<div style="max-width:1200px;margin:0 auto;padding:14px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<a href="index.html"><img src="assets/logo.png" alt="VascuTech Medical Limited" style="height:96px;width:auto;display:block;margin:-18px 0"></a>
+<nav class="nav" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;font-size:16px;font-weight:600">
+<a href="index.html" style="color:#9C2B45">Home</a>
+<a href="vascuai.html" style="color:#1B1D22">VascuAI</a>
+<a href="dualvein.html" style="color:#1B1D22">DualVein</a>
+<a href="about.html" style="color:#1B1D22">About</a>
+<a class="btn" href="about.html" style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;padding:12px 24px;border-radius:999px">Collaborate</a>
 </nav>
-
-<header class="hero">
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <span class="eyebrow">VascuTech Medical Limited</span>
-    <h1>Technology for safer <span class="grad-text">vascular access.</span></h1>
-    <p class="hero-sub">We build the software and hardware clinicians use to learn, and eventually perform, vein access with confidence.</p>
-    <div class="hero-ctas">
-      <a href="work.html" class="btn btn-grad">Explore our work</a>
-      <a href="contact.html" class="btn btn-outline">Contact us</a>
-    </div>
-  </div>
+</div>
 </header>
 
-<div class="tiles-section">
-  <div class="wrap">
-    <div class="tiles">
-      <a class="tile" href="work.html">
-        <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h16v13H7l-3 3V4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-        <h3>Our Work</h3>
-        <p>VascuAI, DUALVein, and how they're performing so far.</p>
-        <span class="go">Explore &rarr;</span>
-      </a>
-      <a class="tile" href="about.html">
-        <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l9 4.5v9L12 21l-9-4.5v-9L12 3z" stroke="white" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
-        <h3>About Us</h3>
-        <p>Our mission, our progress, and where we're headed.</p>
-        <span class="go">Learn more &rarr;</span>
-      </a>
-      <a class="tile" href="contact.html">
-        <div class="tile-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="white" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="white" stroke-width="1.6"/></svg></div>
-        <h3>Contact</h3>
-        <p>Request early access, or just say hello.</p>
-        <span class="go">Get in touch &rarr;</span>
-      </a>
-    </div>
-  </div>
+<!-- HERO -->
+<section style="background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:72px 32px 80px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:1 1 480px;min-width:0">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Vascular access training · Hong Kong</div>
+<h1 style="margin:18px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:58px;line-height:1.06;letter-spacing:-1.6px">Safer vascular access starts with <span style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 50%,#3E4E78 100%);-webkit-background-clip:text;background-clip:text;color:transparent">better training.</span></h1>
+<p style="margin:22px 0 0;font-size:21px;line-height:1.55;color:#575C67;max-width:540px">We build AI-guided practice tools and vein-imaging technology that help nursing and medical students learn IV cannulation with confidence, before they reach a patient.</p>
+<div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:14px">
+<a class="btn" href="#why" style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px">Why it matters</a>
+<a class="btn" href="#products" style="background:#ffffff;color:#1B1D22;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px;border:1.5px solid #D5D7DE">Our products</a>
+</div>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<div style="position:relative;border-radius:40px;overflow:hidden;box-shadow:0 1px 2px rgba(20,20,30,.05),0 22px 50px rgba(60,30,80,.22);background:#1B1D22">
+<img src="assets/home-hero.jpg" alt="A trainee practising cannulation with the DualVein prototype, which projects a green vein map onto the hand" style="width:100%;height:auto;display:block;aspect-ratio:4/4.1;object-fit:cover;object-position:62% 50%">
+<div style="position:absolute;left:20px;bottom:20px;right:20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+<span style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);color:#ffffff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:999px">Working prototype · vein map projected on skin</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHY IT MATTERS -->
+<section id="why" style="max-width:1200px;margin:0 auto;padding:96px 32px 72px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Why it matters</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:42px;line-height:1.12;letter-spacing:-.9px;max-width:780px">IV cannulation is learned by doing, and trainees get too little of it.</h2>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:20px">
+<div style="flex:1 1 300px;min-width:0;background:#F4EEF1;border-radius:28px;padding:32px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#9C2B45">56%</div>
+<div style="margin-top:14px;font-size:18px;line-height:1.45;color:#2b2e36">of trainees surveyed get under 10 hours of dedicated IV instruction.</div>
+</div>
+<div style="flex:1 1 300px;min-width:0;background:#F4EEF1;border-radius:28px;padding:32px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#77396C">62.5%</div>
+<div style="margin-top:14px;font-size:18px;line-height:1.45;color:#2b2e36">have no access to a simulation lab or task trainer.</div>
+</div>
+<div style="flex:1 1 300px;min-width:0;background:#F4EEF1;border-radius:28px;padding:32px">
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:56px;line-height:1;color:#3E4E78">81%</div>
+<div style="margin-top:14px;font-size:18px;line-height:1.45;color:#2b2e36">have seen or caused a failed insertion that distressed a patient.</div>
+</div>
+</div>
+<div style="margin-top:18px;font-size:14px;color:#575C67">VascuTech trainee survey, 2026: nursing students, medical students, junior doctors and phlebotomists in Hong Kong, mainland China, the UK, Bangladesh, Thailand, Vietnam and the Philippines.</div>
+
+<details style="margin-top:30px">
+<summary style="display:inline-flex;align-items:center;gap:10px;background:#ffffff;border:1.5px solid #D5D7DE;border-radius:999px;padding:12px 22px;font-size:15px;font-weight:700;color:#1B1D22">The evidence behind this<svg class="chev" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#9C2B45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5l5 5 5-5"/></svg></summary>
+<div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:16px">
+<div style="flex:1 1 240px;min-width:0;border:1px solid #E7E8ED;border-radius:22px;padding:24px;box-sizing:border-box">
+<div style="font-weight:700;font-size:17px">Repeated attempts</div>
+<div style="margin-top:8px;font-size:15px;line-height:1.55;color:#575C67">In a cohort of 1,063 adults cannulated by experienced anaesthesia staff, 17% failed at the first attempt.<sup>[2]</sup></div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border:1px solid #E7E8ED;border-radius:22px;padding:24px;box-sizing:border-box">
+<div style="font-weight:700;font-size:17px">Catheters that fail</div>
+<div style="margin-top:8px;font-size:15px;line-height:1.55;color:#575C67">A literature review puts peripheral IV catheter failure at 35% to 50%.<sup>[1]</sup> An audit of 40,620 catheters in 51 countries found many symptomatic, idle or poorly dressed.<sup>[3]</sup></div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border:1px solid #E7E8ED;border-radius:22px;padding:24px;box-sizing:border-box">
+<div style="font-weight:700;font-size:17px">Local complications</div>
+<div style="margin-top:8px;font-size:15px;line-height:1.55;color:#575C67">Phlebitis and catheter-related infection are recognised risks of peripheral venous catheters.<sup>[4]</sup></div>
+</div>
+<div style="flex:1 1 240px;min-width:0;border:1px solid #E7E8ED;border-radius:22px;padding:24px;box-sizing:border-box">
+<div style="font-weight:700;font-size:17px">Harder for some patients</div>
+<div style="margin-top:8px;font-size:15px;line-height:1.55;color:#575C67">Veins that cannot be palpated or seen, a diameter of 2 mm or less, and a history of difficult access each predicted a failed first attempt.<sup>[2]</sup> The scale was later validated across several hospitals.<sup>[5]</sup></div>
+</div>
+</div>
+<div style="margin-top:22px;border:1px solid #E7E8ED;border-radius:22px;padding:24px;box-sizing:border-box">
+<div style="font-weight:700;font-size:17px">More from our trainee survey</div>
+<div style="margin-top:8px;font-size:15px;line-height:1.6;color:#575C67">75% feel least prepared for needle insertion technique, and 56.3% rate their confidence 2 out of 5 or lower for a first unsupervised insertion. Obese patients with deeply buried veins were named hardest to cannulate by every respondent. Trainees most want real-time feedback on insertion (75%) and step-by-step procedural guidance (75%).</div>
+</div>
+<div style="margin-top:22px;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#8B909A">References</div>
+<ol style="margin:12px 0 0;padding:0 0 0 22px;font-size:14px;line-height:1.65;color:#575C67;display:flex;flex-direction:column;gap:6px">
+<li>Helm RE, Klausner JD, Klemperer JD, Flint LM, Huang E. Accepted but unacceptable: peripheral IV catheter failure. <em>J Infus Nurs.</em> 2015;38(3):189-203. <a href="https://doi.org/10.1097/NAN.0000000000000100">doi:10.1097/NAN.0000000000000100</a></li>
+<li>van Loon FHJ, Puijn LAPM, Houterman S, Bouwman ARA. Development of the A-DIVA scale: a clinical predictive scale to identify difficult intravenous access in adult patients based on clinical observations. <em>Medicine (Baltimore).</em> 2016;95(16):e3428. <a href="https://doi.org/10.1097/MD.0000000000003428">doi:10.1097/MD.0000000000003428</a></li>
+<li>Alexandrou E, et al. Use of short peripheral intravenous catheters: characteristics, management, and outcomes worldwide. <em>J Hosp Med.</em> 2018;13(5). <a href="https://doi.org/10.12788/jhm.3039">doi:10.12788/jhm.3039</a></li>
+<li>Zingg W, Pittet D. Peripheral venous catheters: an under-evaluated problem. <em>Int J Antimicrob Agents.</em> 2009;34(Suppl 4):S38-S42. <a href="https://doi.org/10.1016/S0924-8579(09)70565-5">doi:10.1016/S0924-8579(09)70565-5</a></li>
+<li>van Loon FHJ, van Hooff LWE, de Boer HD, et al. The modified A-DIVA scale as a predictive tool for prospective identification of adult patients at risk of a difficult intravenous access: a multicenter validation study. <em>J Clin Med.</em> 2019;8(2):144. <a href="https://doi.org/10.3390/jcm8020144">doi:10.3390/jcm8020144</a></li>
+</ol>
+</details>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" style="background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:88px 32px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">Our products</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:42px;line-height:1.12;letter-spacing:-.9px">Two tools for one skill.</h2>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:24px">
+
+<div class="card" style="flex:1 1 520px;min-width:0;background:#ffffff;border-radius:32px;overflow:hidden;box-shadow:0 1px 2px rgba(20,20,30,.05),0 14px 34px rgba(20,20,30,.07);display:flex;flex-direction:column">
+<div style="flex:1 1 auto;padding:36px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+<span style="align-self:flex-start;font-size:12px;font-weight:700;background:#F4EEF1;color:#77396C;padding:6px 12px;border-radius:999px">Closed preview</span>
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:30px">VascuAI</div>
+<p style="margin:0;font-size:17px;line-height:1.55;color:#575C67">An AI-guided practice companion for IV cannulation: phase-by-phase feedback on recorded attempts, a clinical chatbot grounded in curated references, and a learning hub.</p>
+<a href="vascuai.html" style="margin-top:auto;font-weight:700;font-size:16px">Explore VascuAI →</a>
+</div>
+<div style="order:-1;flex:none;position:relative;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%)">
+<video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback controlslist="nodownload noplaybackrate noremoteplayback" preload="auto" poster="assets/vascuai-app-poster.jpg" aria-label="VascuAI learning hub demo, silent loop" style="position:absolute;left:50%;top:0;height:100%;width:auto;transform:translateX(-50%);pointer-events:none;border-radius:0"><source src="assets/vascuai-app.mp4" type="video/mp4"></video>
+</div>
 </div>
 
-<footer>
-  <div class="wrap footer-inner">
-    <img class="footer-mark" src="assets/logo-mark.png" alt="VascuTech mark">
-    <div class="footer-links">
-      <a href="work.html">Our Work</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact us</a>
-    </div>
-    <p class="footer-copy">&copy; 2026 VascuTech Medical Limited &middot; Hong Kong</p>
-  </div>
+<div class="card" style="flex:1 1 520px;min-width:0;background:#ffffff;border-radius:32px;overflow:hidden;box-shadow:0 1px 2px rgba(20,20,30,.05),0 14px 34px rgba(20,20,30,.07);display:flex;flex-direction:column">
+<div style="flex:1 1 auto;padding:36px;box-sizing:border-box;display:flex;flex-direction:column;gap:14px">
+<span style="align-self:flex-start;font-size:12px;font-weight:700;background:#F4EEF1;color:#3E4E78;padding:6px 12px;border-radius:999px">Prototype in development</span>
+<div style="font-family:'Sora',sans-serif;font-weight:700;font-size:30px">DualVein</div>
+<p style="margin:0;font-size:17px;line-height:1.55;color:#575C67">A portable near-infrared vein visualiser with AI vein segmentation that projects the vein pattern onto the skin, built as a teaching aid for manikin and phantom practice.</p>
+<a href="dualvein.html" style="margin-top:auto;font-weight:700;font-size:16px">Explore DualVein →</a>
+</div>
+<div style="order:-1;flex:none;position:relative;aspect-ratio:16/9;overflow:hidden;background:#1B1D22">
+<img src="assets/dualvein-device.jpg" alt="Working DualVein prototype with a hand resting on its base" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:45% 62%;display:block">
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- RECOGNITION STRIP -->
+<section style="background:linear-gradient(135deg,#4A1A3C 0%,#5E2B52 45%,#2F3D63 100%)">
+<div style="padding:44px 0 48px">
+<div style="text-align:center;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.7)">Recognised and supported by</div>
+<div class="mq" style="margin-top:30px">
+<div class="mq-track">
+<div style="display:flex;align-items:center">
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="The James Dyson Award" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="HSITP, Hong Kong-Shenzhen Innovation and Technology Park" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="HKChallenge+ 2026, 12th Hong Kong University Student Innovation and Entrepreneurship Competition" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="The James Dyson Award" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="HSITP, Hong Kong-Shenzhen Innovation and Technology Park" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="HKChallenge+ 2026, 12th Hong Kong University Student Innovation and Entrepreneurship Competition" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="The James Dyson Award" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="HSITP, Hong Kong-Shenzhen Innovation and Technology Park" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="HKChallenge+ 2026, 12th Hong Kong University Student Innovation and Entrepreneurship Competition" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+</div>
+<div style="display:flex;align-items:center" aria-hidden="true">
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-james-dyson-award-white.png" alt="" style="height:76px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">2026 · Hong Kong national winner</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hsitp-white.png" alt="" style="height:58px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">SPIN · Life and Health Technology</div></div>
+<div style="width:320px;display:flex;flex-direction:column;align-items:center;gap:14px;padding:0 24px;box-sizing:border-box"><div style="height:84px;display:flex;align-items:center"><img src="assets/logo-hkchallenge-white.png" alt="" style="height:80px;width:auto;display:block"></div><div style="font-size:13px;letter-spacing:.2px;color:rgba(255,255,255,.78)">HKChallenge+ 2026</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- HOW THEY FIT -->
+<section style="max-width:1200px;margin:0 auto;padding:96px 32px 72px;box-sizing:border-box">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#9C2B45">How they fit together</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:42px;line-height:1.12;letter-spacing:-.9px">Learn it. See it. Practise it.</h2>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:24px">
+<div style="flex:1 1 300px;min-width:0;border-top:3px solid #9C2B45;padding-top:20px">
+<div style="font-weight:700;font-size:21px">Learn</div>
+<div style="margin-top:8px;font-size:17px;line-height:1.55;color:#575C67">Anatomy, technique and complications in the VascuAI learning hub, with a chatbot that answers from curated clinical references.</div>
+</div>
+<div style="flex:1 1 300px;min-width:0;border-top:3px solid #77396C;padding-top:20px">
+<div style="font-weight:700;font-size:21px">See</div>
+<div style="margin-top:8px;font-size:17px;line-height:1.55;color:#575C67">DualVein shows where the veins are in near-infrared light, so learners connect surface anatomy with what lies beneath.</div>
+</div>
+<div style="flex:1 1 300px;min-width:0;border-top:3px solid #3E4E78;padding-top:20px">
+<div style="font-weight:700;font-size:21px">Practise</div>
+<div style="margin-top:8px;font-size:17px;line-height:1.55;color:#575C67">Record an attempt on a manikin and get phase-by-phase feedback to review and repeat, alongside an instructor.</div>
+</div>
+</div>
+<p style="margin:32px 0 0;font-size:14px;line-height:1.5;color:#8B909A">Our tools support instructors and do not replace supervised clinical practice. They are for education and practice, not for clinical decisions.</p>
+</section>
+
+<!-- COLLABORATE -->
+<section style="max-width:1200px;margin:0 auto;padding:0 32px 96px;box-sizing:border-box">
+<div style="background:linear-gradient(135deg,#9C2B45 0%,#77396C 45%,#3E4E78 100%);border-radius:40px;padding:60px 56px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:36px;align-items:center;color:#ffffff">
+<div style="flex:1 1 420px;min-width:0">
+<div style="font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:#f1dde6">For educators and researchers</div>
+<h2 style="margin:12px 0 0;font-family:'Sora',sans-serif;font-weight:600;font-size:40px;line-height:1.12;letter-spacing:-.8px">Help us build this properly.</h2>
+<p style="margin:18px 0 0;font-size:19px;line-height:1.55;color:#fbeff4">We are looking for nursing educators, simulation experts and biomedical engineers to give feedback, run small pilots and shape how these tools are used in teaching.</p>
+</div>
+<div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+<a class="btn" href="about.html" style="background:#ffffff;color:#5a2a50;font-weight:700;padding:16px 28px;border-radius:999px;font-size:17px">Start a conversation</a>
+<div style="font-size:15px;color:#f1dde6">contact@vascu-tech.com</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid #E7E8ED;background:#F7F7FA">
+<div style="max-width:1200px;margin:0 auto;padding:40px 32px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start">
+<div>
+<img src="assets/logo.png" alt="VascuTech Medical Limited" style="height:72px;width:auto;display:block;margin:-12px 0">
+<div style="margin-top:10px;font-size:14px;color:#575C67">VascuTech Medical Limited · Hong Kong</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px;font-size:15px;font-weight:600">
+<a href="vascuai.html" style="color:#1B1D22">VascuAI</a>
+<a href="dualvein.html" style="color:#1B1D22">DualVein</a>
+<a href="about.html" style="color:#1B1D22">About</a>
+<a href="about.html#contact" style="color:#1B1D22">Contact</a>
+</div>
+<div style="width:100%;font-size:13px;line-height:1.5;color:#575C67">© 2026 VascuTech Medical Limited. VascuAI is an education and practice tool, and DualVein is a teaching device. Neither is a medical device for clinical use.</div>
+</div>
 </footer>
 
-<script src="js/particles.js"></script>
-<script src="js/main.js"></script>
+</div>
 </body>
 </html>
