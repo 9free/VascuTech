@@ -16,16 +16,21 @@ The four pages below are the website visitors see. They link only to each other,
 | `assets/` | Images and video used by the four pages above (logos, product photos, VascuAI app clip) |
 | `CNAME` | Custom domain setting. Do not delete. |
 
-## Version 1: previous website (kept, not linked from v2)
+## Version 1: previous website (kept for reference)
 
-Reachable only by typing the direct address, for example `vascu-tech.com/work.html`. They keep the old design and are not linked from the current menu.
+The old pages below now redirect to their closest page on the new site, so old links and bookmarks still land somewhere useful.
+
+| Old address | Redirects to |
+|---|---|
+| `work.html`, `synthvein.html` | Home (`index.html`) |
+| `achievements.html`, `who-we-are.html`, `publications-patents.html` | About (`about.html`) |
+| `contact.html` | Contact section of About (`about.html#contact`) |
+
+These files are still in the repo but nothing links to them any more:
 
 | File | What it is |
 |---|---|
-| `work.html`, `synthvein.html` | Old "Our Work" and SynthVein pages |
-| `achievements.html`, `who-we-are.html`, `publications-patents.html` | Old "About Us" sub-pages |
-| `contact.html` | Old contact page |
-| `css/style.css`, `js/main.js`, `js/particles.js` | Old styles and scripts, used only by the pages above |
-| `assets/logo-lockup.png`, `assets/logo-mark.png` | Old logos, used only by the pages above |
+| `css/style.css`, `js/main.js`, `js/particles.js` | Old styles and scripts from v1 |
+| `assets/logo-lockup.png`, `assets/logo-mark.png` | Old logos from v1 |
 
-A full copy of the complete old site, exactly as it was before v2, is in the branch `website_V1`.
+The complete old site, exactly as it was before v2 (original pages included), is in the branch `website_V1` and the tag `v1.0`. The current site is tagged `v2.0`.
