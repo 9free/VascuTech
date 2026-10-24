@@ -6,7 +6,7 @@ Live site: https://vascu-tech.com (GitHub Pages, served from `main`).
 
 The four pages below are the website visitors see. They link only to each other, to `style.css` and to the files in `assets/`.
 
-| File | What it is |
+| File |
 |---|---|
 | `index.html` | Home |
 | `vascuai.html` | VascuAI product page |
@@ -16,11 +16,11 @@ The four pages below are the website visitors see. They link only to each other,
 | `assets/` | Images and video used by the four pages above (logos, product photos, VascuAI app clip) |
 | `CNAME` | Custom domain setting. Do not delete. |
 
-## Version 1: previous website (kept, not linked from v2)
+## Version 1: previous website
 
-Reachable only by typing the direct address, for example `vascu-tech.com/work.html`. They keep the old design and are not linked from the current menu.
+Reachable only by typing the direct address, for example `vascu-tech.com/work.html`. 
 
-| File | What it is |
+| File |
 |---|---|
 | `work.html`, `synthvein.html` | Old "Our Work" and SynthVein pages |
 | `achievements.html`, `who-we-are.html`, `publications-patents.html` | Old "About Us" sub-pages |
