@@ -12,7 +12,8 @@ The four pages below are the website visitors see. They link only to each other,
 | `vascuai.html` | VascuAI product page |
 | `dualvein.html` | DualVein product page |
 | `about.html` | About, team, milestones, collaborate and contact |
-| `style.css` | Shared styles for the four pages above |
+| `style.css` | Shared styles for the four pages above (includes the language switcher and Chinese typography) |
+| `i18n.js` | Language switcher: English / 简体中文 / 繁體中文. Holds all the Chinese text. If you change English wording in a page, update the matching key in this file. |
 | `assets/` | Images and video used by the four pages above (logos, product photos, VascuAI app clip) |
 | `CNAME` | Custom domain setting. Do not delete. |
 
